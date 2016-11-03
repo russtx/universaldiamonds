@@ -46,7 +46,7 @@ and open the template in the editor.
     .nav .menu-icon {
       cursor: pointer;
       display: inline-block;
-      float: left;
+      float: right;
       padding: 0px;
       position: relative;
       user-select: none;
@@ -54,9 +54,9 @@ and open the template in the editor.
 
 
     .nav .menu-icon .navicon {
-      background: $blue;
+      background: $dark-blue;
       display: block;
-      height: 4px;
+      height: 6px;
       position: relative;
       transition: background .2s ease-out; 
       width: 30px;
@@ -67,10 +67,10 @@ and open the template in the editor.
     
     .nav .menu-icon .navicon:before,
     .nav .menu-icon .navicon:after {
-      background: $blue;
+      background: $dark-blue;
       content: '';
       display: block;
-      height: 4px;
+      height: 6px;
       position: absolute;
       transition: all .2s ease-out;
       width: 30px;
@@ -123,10 +123,7 @@ and open the template in the editor.
     #nav-toggle{
         display:initial;
     }
-    .header{
-        height: 175px;
-        
-    }
+    
     .nav{
         position: absolute;
         width: 280px;
@@ -137,7 +134,7 @@ and open the template in the editor.
     .nav ul{
         height: auto;
         overflow: hidden;
-        background: rgba(15, 14, 14, .8);
+        background: $blue-trans;
         margin-left: 10px;
         position: relative;
         top: 50px;

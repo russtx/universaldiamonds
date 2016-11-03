@@ -10,4 +10,16 @@ and open the template in the editor.
 
 //Colors
 
-$blue:rgb(43, 56, 143);
+$dark-blue:rgb(43, 56, 143);
+$blue-trans:rgba(43, 56, 143, .8);
+$light-blue:rgb(27, 117, 187);
+$text-gray:rgb(128, 130, 133);
+
+
+//Fonts
+
+@font-face {
+	font-family: Lato;  
+	src: url('./assets/fonts/Lato2OFL/Lato-Medium.ttf');  
+	 
+}
