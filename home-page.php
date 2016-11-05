@@ -79,7 +79,7 @@ get_header(); ?>
                                 shipping label...</h2>
                         </a>
                     </div>
-                    
+                    <div class="clearfix"></div>
                     <a href="#"><button>Learn More</button></a>
 
                 </div><!-- iconArea -->  
@@ -140,11 +140,73 @@ get_header(); ?>
                             </ul>
                     </div><!-- leftSide -->
                     <div class="rightSide">
-                        
-                    </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamonds-1.png" alt="diamond-1">
+                        <h2>Have A Question?</h2>
+                        <p>Get in touch with us</p>
+                        <a href="<?php echo home_url(); ?>/contac-us"><button>Contact Us Now</button></a>
+                    </div><!-- rightSidde -->
                     
-                </div>
+                </div><!-- midSection -->
                 
+                <div class="clearfix"></div>
+                
+                
+                <div class="lowerSection">
+                    <div class="leftSide2">
+                        <h2>Intro To Diamonds</h2>
+                        <p>Take a Crash Course in the 4 C<span>s</span></p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamond-2.png" alt="diamond-2">
+                        <a href="<?php echo home_url(); ?>/intro-to-diamonds"><button>Learn More</button></a>
+                    </div><!-- leftSide2 -->
+                    
+                    <div class="rightSide2">
+                        <h2>Diamond Pricing</h2>
+                        <p>Take a Look At Our Pricing Chart</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamonds-3.png" alt="diamond-3">
+                        <a href="<?php echo home_url(); ?>/pricing"><button>Learn More</button></a>
+                    </div><!-- rightSide -->
+                    
+                </div><!-- lowerSection -->
+                
+                <div class="clearfix"></div>
+                
+                <div class="formArea">
+                    <div class="formHeader">
+                        <div class="topRow">
+                            <span class="icon">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamond-icon.png" alt="diamond-icon">
+                            </span>
+                            <h2>Let's Get Started!</h2>
+                        </div>
+                        <p>Submit Your Diamonds or Precious Metals...</p>
+                    </div>    
+                        
+                    
+                    
+                    
+                    <aside class="formButtons">
+                        <span class="borderLine">
+                            <a href="#"><button class="circle">&#40; 1 &#41;</button></a>
+                                <p>Fill Out Form</p>
+                        </span>
+                        <span class="borderLine">
+                            <a href="#"><button class="circle">&#40; 2 &#41;</button></a>
+                                <p>Get a Free Shipping label</p>
+                        </span>
+                        <span class="borderLine">
+                            <a href="#"><button class="circle">&#40; 3 &#41;</button></a>
+                                <p>Arrange For A Pick Up</p>
+                        </span>
+                        <span class="borderLine">
+                            <a href="#"><button class="circle">&#40; 4 &#41;</button></a>
+                                <p>Receive An Offer</p>
+                        </span>
+                    </aside>
+                    
+                    <article class="formContent">
+                        <?php echo do_shortcode('[gravityform id="1" title="true" description="true"]'); ?>
+                    </article>
+                </div>
                 
 
 		</section>

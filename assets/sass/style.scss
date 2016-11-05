@@ -136,7 +136,23 @@ nav input[type="checkbox"]{
 }
 /* footer */
 .footer {
-
+    span.bluetop{
+        display: block;
+        background:$light-blue;
+        height:3em;
+    }
+    background:$dark-blue;
+    //padding:0 2em;
+    height:15em;
+    img{
+        display: block;
+        width:20em;
+        margin: 1em auto 3em auto;
+    }
+    p.copyright{
+        color:#fff;
+        text-align: center;
+    }
 }
 
 /*------------------------------------*\
@@ -235,6 +251,7 @@ nav input[type="checkbox"]{
         color:$dark-blue;
     }
     .midSection{
+        
         .leftSide{
             .mask{
                 ul.images{
@@ -260,8 +277,135 @@ nav input[type="checkbox"]{
                 }
             }
         }
+        .rightSide{
+            background: url(./assets/images/bannerImage-2.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            img{
+                margin-top:4em;
+                padding: 0 2em;
+            }
+            h2{
+                text-align: center;
+                text-transform: uppercase;
+                color:$dark-blue;
+                font-size: 1.5em;
+                margin-bottom: 0;
+            }
+            p{
+                text-align: center;
+                text-transform: uppercase;
+                color:$light-blue;
+            }
+        }
+    }//midSection
+    .lowerSection{
+        margin-top:3em;
+        .leftSide2{
+            //margin-top:3em;
+            padding:3em 3em 0;
+            h2{
+                text-align: right;
+                text-transform: uppercase;
+                color:$dark-blue;
+                font-size: 1.5em;
+                margin-bottom: 0;
+            }
+            p{
+                text-align: right;
+                text-transform: uppercase;
+                color:$light-blue;
+                span{
+                    text-transform: lowercase;
+                }
+            }
+            img{
+                
+            }
+        }
+        .rightSide2{
+            //margin-top:3em;
+            padding:3em 3em 0;
+            h2{
+                text-align: left;
+                text-transform: uppercase;
+                color:$dark-blue;
+                font-size: 1.5em;
+                margin-bottom: 0;
+            }
+            p{
+                text-align: left;
+                text-transform: uppercase;
+                color:$light-blue;
+            }
+            img{
+                
+            }
+        }
+        
+    }//lowerSection
+    .formArea{
+        margin-top:3em;
+         padding:0 1em;
+         span.icon{
+             float:left;
+             img{
+                height:2em;
+                width:auto;
+                margin: 7px 11px 0 0;
+                padding: 0;
+             }
+         }
+         h2{
+             color:$dark-blue;
+             text-transform: uppercase;
+             font-size: 2.5em;
+             margin-bottom: 0;
+         }
+         p{
+             color:$light-blue;
+             text-align: center;
+             text-transform: uppercase;
+             
+         }
+        .formButtons{
+            @include span-columns(4);
+            margin-top:2em;
+            span.borderLine{
+                display: block;
+                border-bottom:solid 1px $line-gray;
+                a{
+                    //text-align:center;
+                    button.circle{
+                        width: 30px;
+                        height:30px;
+                        color:#fff;
+                        padding: 0px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background:$dark-blue;
+                        border: solid 1px $dark-blue;
+                        border-radius:15px;
+                        line-height: 1.5em;
+                    }
+                }
+                p{
+                    color:$light-blue;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .formContent{
+            @include span-columns(8);
+            @include omega();
+            padding:0 1em;
+            h3.gform_title{
+                display: none;
+            }
+        }
     }
-}
+}//homeSection
 
 //homepage end
 
@@ -273,14 +417,48 @@ nav input[type="checkbox"]{
 
 
 /*------------------------------------*\
-    TEST AREA
+    Gravity Forms
+\*------------------------------------*/
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]){
+    background:$dark-blue;
+    border-radius:0;
+    color:#fff;
+}
+.gform_wrapper textarea.large{
+    background:$dark-blue;
+}
+.gform_wrapper textarea.small{
+    background:$dark-blue;
+}
+/* gform placeholders*/
+::-webkit-input-placeholder { color:#FFF; }
+:-moz-placeholder { opacity: 1; color:#FFF; } /* Firefox 18- */
+::-moz-placeholder { opacity: 1; color:#FFF; } /* firefox 19+ */
+:-ms-input-placeholder { color:#FFF; } /* ie */
+input:-moz-placeholder { color:#FFF; }
+
+body .gform_wrapper ul li.gfield{
+    margin-top: 0;
+}
+.gform_wrapper .top_label .gfield_label{
+    display:none !important;
+}
+button, [type='button'], [type='reset'], [type='submit']{
+    border-radius: o;
+}
+body .gform_wrapper ul li.gfield{
+    margin-top:0!important;
+}
+
+/*------------------------------------*\
+    slider
 \*------------------------------------*/
 .mask { 
     //float:left;
     display:block;
-    margin:3em auto;
+    margin:3em auto ;
     width:300px;
-    height:300px;
+    height:350px;
     overflow:hidden;
 }
 ul.images {
@@ -296,7 +474,7 @@ ul.triggers {
     position:relative;
     display: block;
     margin: 0 auto;
-    top:-20em;
+    top:-24em;
     width:12em;
 }
     ul.triggers li { 
@@ -329,6 +507,12 @@ ul.triggers {
     left:180px;
 }
 
+/*------------------------------------*\
+	TEST AREA
+\*------------------------------------*/
+
+
+
 
 /*------------------------------------*\
 	TYPOGRAPHY
@@ -345,32 +529,6 @@ ul.triggers {
     font-style:normal;
 }
 
-/*------------------------------------*\
-    RESPONSIVE
-\*------------------------------------*/
-
-@media only screen and (min-width:320px) {
-
-}
-@media only screen and (min-width:480px) {
-
-}
-@media only screen and (min-width:768px) {
-
-}
-@media only screen and (min-width:1024px) {
-
-}
-@media only screen and (min-width:1140px) {
-
-}
-@media only screen and (min-width:1280px) {
-
-}
-@media only screen and (-webkit-min-device-pixel-ratio:1.5),
-	   only screen and (min-resolution:144dpi) {
-
-}
 
 /*------------------------------------*\
     MISC
