@@ -85,87 +85,90 @@ get_header(); ?>
                 </div><!-- iconArea -->  
                 
                 <div class="midSection">
-                    <div class="leftSide">
-                        <div class="mask">
-                            <ul class="images">
-                               <li>
-                                   <span>
-                                       <h2>What We Buy</h2>
-                                       <p>Watches, Diamonds, Jewelry, etc.</p>
-                                   </span>  
-                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
+                    <div class="midSectionContainer">
+                        <div class="leftSide">
+                            <div class="mask">
+                                <ul class="images">
+                                   <li>
+                                       <span>
+                                           <h2>What We Buy</h2>
+                                           <p>Watches, Diamonds, Jewelry, etc.</p>
+                                       </span>  
+                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
 
-                               </li>
-                               <li>
-                                   <span>
-                                       <h2>PIX 2</h2>
-                                       <p>Some More Text</p>
-                                   </span> 
-                                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
+                                   </li>
+                                   <li>
+                                       <span>
+                                           <h2>PIX 2</h2>
+                                           <p>Some More Text</p>
+                                       </span> 
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
 
-                               </li>
-                                <li>
-                                    <span>
-                                       <h2>PIX 3</h2>
-                                       <p>Some More Text</p>
-                                   </span>
-                                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
+                                   </li>
+                                    <li>
+                                        <span>
+                                           <h2>PIX 3</h2>
+                                           <p>Some More Text</p>
+                                       </span>
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
 
-                               </li>
-                               <li>
-                                   <span>
-                                       <h2>PIX 4</h2>
-                                       <p>Some More Text</p>
-                                   </span>
-                                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
+                                   </li>
+                                   <li>
+                                       <span>
+                                           <h2>PIX 4</h2>
+                                           <p>Some More Text</p>
+                                       </span>
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
 
-                               </li>
-                               <li>
-                                   <span>
-                                       <h2>PIX 5</h2>
-                                       <p>Some More Text</p>
-                                   </span>
-                                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
+                                   </li>
+                                   <li>
+                                       <span>
+                                           <h2>PIX 5</h2>
+                                           <p>Some More Text</p>
+                                       </span>
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
 
-                               </li>
-                            </ul>
-                        </div><!-- mask -->
+                                   </li>
+                                </ul>
+                            </div><!-- mask -->
 
-                            <ul class="triggers">
-                               <li></li>
-                               <li></li>
-                               <li></li>
-                               <li></li>
-                               <li></li>
-                            </ul>
-                    </div><!-- leftSide -->
-                    <div class="rightSide">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamonds-1.png" alt="diamond-1">
-                        <h2>Have A Question?</h2>
-                        <p>Get in touch with us</p>
-                        <a href="<?php echo home_url(); ?>/contac-us"><button>Contact Us Now</button></a>
-                    </div><!-- rightSidde -->
-                    
+                                <ul class="triggers">
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                </ul>
+                        </div><!-- leftSide -->
+                        <div class="rightSide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamonds-1.png" alt="diamond-1">
+                            <h2>Have A Question?</h2>
+                            <p>Get in touch with us</p>
+                            <a href="<?php echo home_url(); ?>/contac-us"><button>Contact Us Now</button></a>
+                        </div><!-- rightSidde -->
+                    </div><!-- misSectionContainer -->
                 </div><!-- midSection -->
                 
                 <div class="clearfix"></div>
                 
                 
                 <div class="lowerSection">
-                    <div class="leftSide2">
-                        <h2>Intro To Diamonds</h2>
-                        <p>Take a Crash Course in the 4 C<span>s</span></p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamond-2.png" alt="diamond-2">
-                        <a href="<?php echo home_url(); ?>/intro-to-diamonds"><button>Learn More</button></a>
-                    </div><!-- leftSide2 -->
-                    
-                    <div class="rightSide2">
-                        <h2>Diamond Pricing</h2>
-                        <p>Take a Look At Our Pricing Chart</p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamonds-3.png" alt="diamond-3">
-                        <a href="<?php echo home_url(); ?>/pricing"><button>Learn More</button></a>
-                    </div><!-- rightSide -->
-                    
+                    <div class="lowerSectionContainer">
+                        
+                        <div class="leftSide2">
+                            <h2>Intro To Diamonds</h2>
+                            <p>Take a Crash Course in the 4 C<span>s</span></p>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamond-2.png" alt="diamond-2">
+                            <a href="<?php echo home_url(); ?>/intro-to-diamonds"><button>Learn More</button></a>
+                        </div><!-- leftSide2 -->
+
+                        <div class="rightSide2">
+                            <h2>Diamond Pricing</h2>
+                            <p>Take a Look At Our Pricing Chart</p>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamonds-3.png" alt="diamond-3">
+                            <a href="<?php echo home_url(); ?>/pricing"><button>Learn More</button></a>
+                        </div><!-- rightSide -->
+                    </div><!-- lowerSectionContainer -->
                 </div><!-- lowerSection -->
                 
                 <div class="clearfix"></div>
