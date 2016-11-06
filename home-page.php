@@ -209,7 +209,7 @@ get_header(); ?>
                     <article class="formContent">
                         <?php echo do_shortcode('[gravityform id="1" title="true" description="true"]'); ?>
                     </article>
-                </div>
+                </div><!-- formArea -->
                 
 
 		</section>

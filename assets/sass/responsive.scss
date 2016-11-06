@@ -23,7 +23,22 @@ and open the template in the editor.
             }
         }
     }
+    .page-template-intro-page{
     
+        .mainSection{
+            .mainSectionContainer{
+                padding:0 2em;
+                ul.leftTabs{
+                    h2{
+                        letter-spacing: 1px;
+                    } 
+                }
+                ul.rightTabs{
+                    
+                }
+            } 
+        }       
+    }
 }
 
 
@@ -38,6 +53,29 @@ and open the template in the editor.
                 
             }
         }
+    }
+    .page-template-intro-page{
+    
+        .mainSection{
+            .mainSectionContainer{
+                .introContainer{
+                    ul.leftTabs{
+                        @include span-columns(3);
+                    }
+                    ul.rightTabs{
+                        @include span-columns(9);
+                        @include omega();
+                        min-height: 34em;
+                        li{
+                            h2{
+                                margin-top:2em;
+                            }
+                        }
+                    }
+                }
+                
+            } 
+        }       
     }
 }
 
@@ -171,6 +209,7 @@ and open the template in the editor.
         }
     }//homeSection
     .mainSection{
+        
         .formArea{
             @include outer-container;
             display:block;
@@ -195,10 +234,10 @@ and open the template in the editor.
             
             .formButtons{
                 display:block;
-                border-right:solid 1px $line-gray;
+                //border-right:solid 1px $line-gray;
                 span.borderLine{
                     width:60%;
-                    margin: 3em auto 0;
+                    margin: 1em auto 0;
                 }
             }
             .formContent{
@@ -245,6 +284,80 @@ and open the template in the editor.
             }
         }
     }//mainSection
+    .page-template-why-page{
+        .mainSection{
+            .mainSectionContainer{
+                .mainContent{
+                    p{
+                        padding: 0 4em;
+                    }
+                }
+                .customPostArea{
+                    padding:0em;
+                    margin-top:-5em;
+                    .customPost{
+                        margin-top:3em;
+                        .leftSide{
+                            @include span-columns(6);
+                        }
+                        .rightSide{
+                            @include span-columns(6);
+                            @include omega();
+                            margin-top:6em;
+                            img{
+                                margin-top: -6em;
+                            }
+                        }
+                    }
+
+                }
+                .lowerText{
+                    @include span-columns(6);
+                    @include shift(3);
+                }
+            }//mainSectionContainer
+        }//mainSection
+    }
+    .page-template-shipping-page{
+        .mainSection{
+            
+            .formArea{
+                .formButtons{
+                    border-right:solid 1px $line-gray;
+                    span.borderLine{
+                        
+                        margin: 3em auto 0;
+                    }
+                }
+            }
+            
+        }
+    }
+    .page-template-intro-page {
+        .mainSection {
+            .mainSectionContainer {
+                ul.rightTabs{
+                    min-height: 26em;
+                    padding: 0 4em;
+                }
+            }
+        }
+    }
+    .page-template-about-page{
+        .mainSection{
+            .mainSectionContainer{
+                .leftAbout{
+                    img{
+                        width:6em;
+                    }
+                    
+                }
+                .rightAbout{
+                    
+                }
+            }
+        }
+    }
 }
 
 
@@ -319,9 +432,12 @@ and open the template in the editor.
         margin-left:332px;
        
     }
-    .homeSection{
-        
+    .mainSection{
+        span.pageTitle{
+            margin-top: -6.5em;
+        }
     }
+    
 }
 
 
@@ -494,51 +610,68 @@ and open the template in the editor.
         
     }//homesection
     .mainSection{
-        .lowerSection{
-            height:35em;
-            .leftSide2{
+        .mainSectionContainer{
+            span.contentHeader{
+                display: block;
+                padding: 0 4em;
+            }
+            .mainContent{
+                padding:0 4em;
+            }
+            .lowerSection{
                 height:35em;
-                img{
-                    float:right;
-                    margin-bottom: 3em;
-                    width:326px;
-                    height: auto;
+                .leftSide2{
+                    height:35em;
+                    img{
+                        float:right;
+                        margin-bottom: 3em;
+                        width:326px;
+                        height: auto;
+                    }
+                    h2{
+                        letter-spacing: 2px;
+                        font-size:1.8em;
+                    }
+                    p{
+                        letter-spacing: 2px;
+                        margin-bottom: 2em;
+                    }
+                    button{
+                        float:right;
+                        margin-right:14%
+                    }
                 }
-                h2{
-                    letter-spacing: 2px;
-                    font-size:1.8em;
-                }
-                p{
-                    letter-spacing: 2px;
-                    margin-bottom: 2em;
-                }
-                button{
-                    float:right;
-                    margin-right:14%
+                .rightSide2{
+                    height:35em;
+                    img{
+                        float:left;
+                        margin-bottom: 3em;
+                        width:326px;
+                        height: auto;
+                    }
+                    h2{
+                        letter-spacing: 2px;
+                        font-size:1.8em;
+                    }
+                    p{
+                        letter-spacing: 2px;
+                        margin-bottom: 2em;
+                    }
+                    button{
+                        float:left;
+                        margin-left:14%
+                    }
                 }
             }
-            .rightSide2{
-                height:35em;
-                img{
-                    float:left;
-                    margin-bottom: 3em;
-                    width:326px;
-                    height: auto;
-                }
-                h2{
-                    letter-spacing: 2px;
-                    font-size:1.8em;
-                }
-                p{
-                    letter-spacing: 2px;
-                    margin-bottom: 2em;
-                }
-                button{
-                    float:left;
-                    margin-left:14%
-                }
-            }
+        
         }//lowerSection
+        .formArea{
+            .formButtons{
+                span.borderLine{
+                    height:8em;
+                }
+            }
+        }
     }
     .footer{
         height:20em;
@@ -701,61 +834,101 @@ and open the template in the editor.
         }
     } //homeSection  
     .mainSection{
-        .formArea{
-                    
-            .formHeader{
-                p{
-                    letter-spacing: 2px;
-                }
-                .topRow{
-                    width:38em; 
-                    span.icon{
-                        img{
-                            height:3em;
-                        }
-                    }
-                    h2{
-                        font-size: 3.5em;
-                    }
-                    
-                }
-            }
-            .formContent{
-                padding: 0 6em 0 0em;
+        span.pageTitle{
+            position: relative;
+            top:-3.5em;
+            h1{
+                font-size: 3.5em;
             }
         }
-        .lowerSection{
-            
-            height:43em;
-            .leftSide2{
-                height:43em;
-                img{
-                    width:460px;
+        .mainSectionContainer{
+            span.contentHeader{
+                h2{
+                    font-size: 3.5em;
                 }
-                 h2{
-                    font-size: 2.5em;
-                }
-                p{
-                    font-size: 1.5em;
-                    margin-bottom: 1em;
-                }
-                button{
-                    margin-right: 28%;
+                h3{
+                    font-size: 1.1em;
+                    letter-spacing: 2px;
                 }
             }
-            .rightSide2{
-                img{
-                    width:460px;
+            
+            .formArea{
+                    
+                .formHeader{
+                    p{
+                        letter-spacing: 2px;
+                    }
+                    .topRow{
+                        width:38em; 
+                        span.icon{
+                            img{
+                                height:3em;
+                            }
+                        }
+                        h2{
+                            font-size: 3.5em;
+                        }
+
+                    }
                 }
-                h2{
-                    font-size: 2.5em;
+                .formContent{
+                    padding: 0 6em 0 0em;
                 }
+            }
+            .lowerSection{
+
+                height:43em;
+                .leftSide2{
+                    height:43em;
+                    img{
+                        width:460px;
+                    }
+                     h2{
+                        font-size: 2.5em;
+                    }
+                    p{
+                        font-size: 1.5em;
+                        margin-bottom: 1em;
+                    }
+                    button{
+                        margin-right: 28%;
+                    }
+                }
+                .rightSide2{
+                    img{
+                        width:460px;
+                    }
+                    h2{
+                        font-size: 2.5em;
+                    }
+                    p{
+                        font-size: 1.5em;
+                        margin-bottom: 1em;
+                    }
+                    button{
+                        margin-left: 28%;
+                    }
+                }
+            }
+        }
+    }//mainContent
+    .page-template-why-page{
+        .mainSection{
+            .mainSectionContainer{
                 p{
-                    font-size: 1.5em;
-                    margin-bottom: 1em;
+                    font-size: 1.2em;
                 }
-                button{
-                    margin-left: 28%;
+                @include outer-container;
+                padding:0 8em;
+                .customPostArea{
+                    padding: 0 6em;
+                    img{
+                        height:14em;
+                    }
+                    h2{
+                        font-size: 1.2em;
+                    }
+                    
                 }
             }
         }

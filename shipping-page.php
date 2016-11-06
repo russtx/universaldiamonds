@@ -7,9 +7,9 @@ get_header(); ?>
 		<section class="mainSection">
                     
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bannerImage-3.jpg" alt="banner-image-3" class="bannerImage">
-                    
+                    <span class="pageTitle"><h1>Get A Quote</h1></span>
                     <div class="mainSectionContainer mobileOnly">   
-                        <span class="pageTitle"><h1>Get A Quote</h1></span>
+                        
 
                         <span class="contentHeader">
                             <h2>Let's Get Started</h2>
@@ -72,7 +72,7 @@ get_header(); ?>
                         <article class="formContent">
 
                             <div class="mainSectionContainer desktopOnly">   
-                            <span class="pageTitle"><h1>Get A Quote</h1></span>
+                            
 
                             <span class="contentHeader">
                                 <h2>Let's Get Started</h2>
