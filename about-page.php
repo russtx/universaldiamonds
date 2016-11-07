@@ -11,52 +11,57 @@ get_header(); ?>
                         <span class="pageTitle"><h1>About Us</h1></span>
 
                 <div class="mainSectionContainer"> 
-                    <div class="leftAbout desktopOnly">
-                        <?php // check if the post has a Post Thumbnail assigned to it.
-                            if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail();
-                            } 
-                            the_content(); ?>
-                        <h2>Let's Get Started !</h2>
-                        
-                    </div><!-- leftAbout -->        
-                    <div class="rightAbout">    
-                                            <span class="contentHeader">
-                                                <h2>About Us</h2>
-                                                <h3>Discover The Difference of Universal</h3>
-                                            </span>
+                    
+                    <div class="aboutSection">
+                            <div class="leftAbout desktopOnly">
+                                <?php // check if the post has a Post Thumbnail assigned to it.
+                                    if ( has_post_thumbnail() ) {
+                                            the_post_thumbnail();
+                                    } 
+                                    the_content(); ?>
+                                <h2>Let's Get<br />
+                                    Started !</h2>
 
-                                    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+                            </div><!-- leftAbout -->        
+                            <div class="rightAbout">    
+                                                    <span class="contentHeader">
+                                                        <h2>About Us</h2>
+                                                        <h3>Discover The Difference of Universal</h3>
+                                                    </span>
 
-                                            <!-- article -->
-                                            <article id="post-<?php the_ID(); ?>" <?php post_class('mainContent'); ?>>
+                                            <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-                                                    <?php the_content(); ?>
+                                                    <!-- article -->
+                                                    <article id="post-<?php the_ID(); ?>" <?php post_class('mainContent'); ?>>
 
-                                                    <?php comments_template( '', true ); // Remove if you don't want comments ?>
+                                                            <?php the_content(); ?>
 
-                                                    <br class="clear">
+                                                            <?php comments_template( '', true ); // Remove if you don't want comments ?>
 
-                                                    <?php edit_post_link(); ?>
+                                                            <br class="clear">
 
-                                            </article>
-                                            <!-- /article -->
+                                                            <?php edit_post_link(); ?>
 
-                                    <?php endwhile; ?>
+                                                    </article>
+                                                    <!-- /article -->
 
-                                    <?php else: ?>
+                                            <?php endwhile; ?>
 
-                                            <!-- article -->
-                                            <article>
+                                            <?php else: ?>
 
-                                                    <h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+                                                    <!-- article -->
+                                                    <article>
 
-                                            </article>
-                                            <!-- /article -->
+                                                            <h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
 
-                                    <?php endif; ?>
-                                            
-                    </div><!--rightAbout -->                        
+                                                    </article>
+                                                    <!-- /article -->
+
+                                            <?php endif; ?>
+
+                            </div><!--rightAbout -->    
+
+                    </div><!-- aboutSection -->
 
                                     <div class="clearfix"></div>
 

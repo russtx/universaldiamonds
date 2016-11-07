@@ -733,7 +733,90 @@ nav input[type="checkbox"]{
             
         }//mainSectionContainer
     }//mainSection
+    
+}//intro page
+.page-template-about-page{
+    .mainSection{
+        .mainSectionContainer{
+            .leftAbout{
+                img{
+                    
+                }
+            }
+        }
+    }
 }
+.page-template-contact-page{
+    .mainSection{
+        .mainSectionContainer{
+            .leftContact{
+                .logoImage{
+                    img{
+                        display: block;
+                        margin: 4em auto;
+                        
+                    }
+                    
+                }
+                h2{
+                    color:$light-blue;
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+                span.address{
+                    display: block;
+                    margin-top:1em;
+                    margin-bottom:1em;
+                    text-align: center;
+                    a{
+                        color:$dark-blue;
+                    }
+                }
+                span.phone{
+                    display: block;
+                    margin-top:1em;
+                    margin-bottom:1em;
+                    text-align: center;
+                    a{
+                        color:$dark-blue;
+                    }
+                }
+                span.email{
+                    display: block;
+                    margin-top:1em;
+                    margin-bottom:1em;
+                    text-align: center;
+                    a{
+                        color:$light-blue;
+                    }
+                }
+                .package{
+                    display:block;
+                    width: 14em;
+                    margin:3em auto;
+                    span.packageImage{
+                        img{
+                            display: block;
+                            width:4em;
+                            height:auto;
+                            float:left;
+                            margin: 0 1em;
+                        }
+
+                    }
+                    span{
+                        h2{
+                            text-align: left;
+                            color:$dark-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/

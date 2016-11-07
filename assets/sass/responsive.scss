@@ -347,13 +347,54 @@ and open the template in the editor.
         .mainSection{
             .mainSectionContainer{
                 .leftAbout{
+                    @include span-columns(3);
+                    margin-top: 7em;
+                    border-right:solid 1px $line-gray;
+                    height:18em;
                     img{
-                        width:6em;
+                        display: block;
+                        width:5em;
+                        margin: 0 auto;
+                        margin-top:7em;
                     }
-                    
+                    h2{
+                        text-align: center;
+                        text-transform: uppercase;
+                        color:$dark-blue;
+                        
+                    }
                 }
                 .rightAbout{
-                    
+                    @include span-columns(9);
+                    @include omega();
+                    padding:0 1em;
+                }
+            }
+        }
+    }
+    .page-template-contact-page{
+        
+        .mainSection{
+            
+            .mainSectionContainer{
+                
+                .contactContent{
+                    margin:3px;
+                    @include outer-container;
+                    .leftContact{
+                        @include span-columns(4);
+                        margin-top:4em;
+                        border-right:solid 1px $line-gray;
+                        .logoImage{
+                            img{
+                                width:10em;
+                            }
+                        }
+                    }
+                    .rightContact{
+                        @include span-columns(8);
+                        @include omega();
+                    }
                 }
             }
         }
@@ -673,12 +714,34 @@ and open the template in the editor.
             }
         }
     }
+    .page-template-about-page{
+        .mainSection{
+            .mainSectionContainer{
+                .aboutSection{
+                    @include outer-container;
+                    .leftAbout{
+                        
+                        height:28em;
+                        margin-top:10em;
+                        img{
+                            width:7em;
+                        }
+                        h2{
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .footer{
         height:20em;
+       
         img{
             margin:4em 3em;
         }
     }
+    
 }
 
 
@@ -929,6 +992,22 @@ and open the template in the editor.
                         font-size: 1.2em;
                     }
                     
+                }
+            }
+        }
+    }
+    .page-template-contact-page{
+        .mainSection{
+            .mainSectionContainer{
+                .contactContent{
+                    .leftContact{
+                        @include span-columns(3);
+                        margin-top: 8em;
+                    }
+                    .rightContact{
+                        @include span-columns(9);
+                        @include omega();
+                    }
                 }
             }
         }
