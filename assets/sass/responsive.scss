@@ -463,20 +463,22 @@ and open the template in the editor.
     }
     .mainSection{
         .lowerSection{
-            .leftSide2{
-                h2, p{
-                   padding: 0 25px 
+            .lowerSectionContainer{
+                .leftSide2{
+                    h2, p{
+                       padding: 0 25px 
+                    }
+                    img{
+                       padding: 0 25px 
+                    }
                 }
-                img{
-                   padding: 0 25px 
-                }
-            }
-            .rightSide2{
-                h2, p{
-                   padding: 0 25px 
-                }
-                img{
-                   padding: 0 25px 
+                .rightSide2{
+                    h2, p{
+                       padding: 0 25px 
+                    }
+                    img{
+                       padding: 0 25px 
+                    }
                 }
             }
         }
@@ -965,8 +967,47 @@ and open the template in the editor.
                 font-size: 3.5em;
             }
         }
+        
+        .mainSectionContainer{
+            
+            span.contentHeader{
+                h2{
+                    font-size: 3.5em;
+                }
+                h3{
+                    font-size: 1.1em;
+                    letter-spacing: 2px;
+                }
+            }
+            
+            .formArea{
+                    
+                .formHeader{
+                    p{
+                        letter-spacing: 2px;
+                    }
+                    .topRow{
+                        width:38em; 
+                        span.icon{
+                            img{
+                                height:3em;
+                            }
+                        }
+                        h2{
+                            font-size: 3.5em;
+                        }
+
+                    }
+                }
+                .formContent{
+                    padding: 0 6em 0 0em;
+                }
+            }
+            
+        }
         .lowerSection{
             height:43em;
+            width:100%;
             .lowerSectionContainer{
                 .leftSide2{
                     height:43em;
@@ -1005,42 +1046,6 @@ and open the template in the editor.
                 }
             }
         }
-        .mainSectionContainer{
-            span.contentHeader{
-                h2{
-                    font-size: 3.5em;
-                }
-                h3{
-                    font-size: 1.1em;
-                    letter-spacing: 2px;
-                }
-            }
-            
-            .formArea{
-                    
-                .formHeader{
-                    p{
-                        letter-spacing: 2px;
-                    }
-                    .topRow{
-                        width:38em; 
-                        span.icon{
-                            img{
-                                height:3em;
-                            }
-                        }
-                        h2{
-                            font-size: 3.5em;
-                        }
-
-                    }
-                }
-                .formContent{
-                    padding: 0 6em 0 0em;
-                }
-            }
-            
-        }
     }//mainContent
     .page-template-why-page{
         .mainSection{
@@ -1061,6 +1066,25 @@ and open the template in the editor.
                     
                 }
             }
+            .lowerSection{
+                height:43em;
+                .lowerSectionContainer{
+                    .leftSide2{
+                        a{
+                            button{
+                                margin-top:0em
+                            }
+                        }
+                    }
+                    .rightSide2{
+                        a{
+                            button{
+                                margin-top:0em
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .page-template-contact-page{
@@ -1076,8 +1100,79 @@ and open the template in the editor.
                         @include omega();
                     }
                 }
+                .lowerSection{
+                    height:43em;
+                    .lowerSectionContainer{
+                        .leftSide2{
+                            a{
+                                button{
+                                    margin-top:0em
+                                }
+                            }
+                        }
+                        .rightSide2{
+                            a{
+                                button{
+                                    margin-top:0em
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
+    }
+    .page-template-intro-page{
+        .mainSection{
+            .mainSectionContainer{
+                .lowerSection{
+                    height:43em;
+                    .lowerSectionContainer{
+                        .leftSide2{
+                            a{
+                                button{
+                                    margin-top:0em
+                                }
+                            }
+                        }
+                        .rightSide2{
+                            a{
+                                button{
+                                    margin-top:0em
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .page-template-about-page{
+        .mainSection{
+            .mainSectionContainer{
+                .lowerSection{
+                    height:43em;
+                    .lowerSectionContainer{
+                        .leftSide2{
+                            a{
+                                button{
+                                    margin-top:0em
+                                }
+                            }
+                        }
+                        .rightSide2{
+                            a{
+                                button{
+                                    margin-top:0em
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
 
