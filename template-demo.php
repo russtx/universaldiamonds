@@ -8,110 +8,40 @@ get_header(); ?>
                     <div class="mainSectionContainer">
                         
                         
-        <ul class="leftTabs" id="tabs-titles">
-            <li class="current">
-                <?php         
-                    $args = array( 'post_type' => 'diamonds', 'posts_per_page' => 1, 'order' => 'ASC' );
-                    $loop = new WP_Query( $args );
-                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <h2><?php the_title(); ?>&nbsp;<i class="fa fa-play" aria-hidden="true"></i></h2>
+                        <select id="reportsSelect">
+                           
+                           <option value="imaging" id="imaging" onclick="show(this)">0.5-0.60 ct rounds</option>
+                           <option value="inventory" id="inventory" onclick="show(this)">0.7-.89 ct rounds</option>
+                           <option value="chargeback" id="chargeback" onclick="show(this)">0.9-0.99-rounds</option>
+                           <option value="studentJobAccount" id="studentJobAccount" onclick="show(this)">1.00-1.49-ct-rounds</option>
+                           <option value="studentAccount" id="studentAccount" onclick="show(this)">1.5-1.99-ct-rounds</option>
+                           <option value="studentcount" id="studentcount" onclick="show(this)">2-2.99-ct-rounds</option>
+                       </select>
 
-                <?php endwhile; ?>
-            </li>
-            <li>
-                <?php         
-                    $args = array( 'post_type' => 'diamonds', 'posts_per_page' => 1, 'offset' => 1, 'order' => 'ASC' );
-                    $loop = new WP_Query( $args );
-                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <h2><?php the_title(); ?>&nbsp;<i class="fa fa-play" aria-hidden="true"></i></h2>
-
-                <?php endwhile; ?>
-            </li>
-            <li>
-                <?php         
-                    $args = array( 'post_type' => 'diamonds', 'posts_per_page' => 1, 'offset' => 2, 'order' => 'ASC' );
-                    $loop = new WP_Query( $args );
-                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <h2><?php the_title(); ?>&nbsp;<i class="fa fa-play" aria-hidden="true"></i></h2>
-
-                <?php endwhile; ?>
-            </li>
-            <li>
-                <?php         
-                    $args = array( 'post_type' => 'diamonds', 'posts_per_page' =>  1, 'offset' => 3, 'order' => 'ASC' );
-                    $loop = new WP_Query( $args );
-                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <h2><?php the_title(); ?>&nbsp;<i class="fa fa-play" aria-hidden="true"></i></h2>
-
-                <?php endwhile; ?>
-            </li>
-            <li>
-                <?php         
-                    $args = array( 'post_type' => 'diamonds', 'posts_per_page' => 1, 'offset' => 4, 'order' => 'ASC' );
-                    $loop = new WP_Query( $args );
-                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <h2><?php the_title(); ?>&nbsp;<i class="fa fa-play" aria-hidden="true"></i></h2>
-
-                <?php endwhile; ?>
-            </li>
-        </ul>
-                    
-                                      
-                    
-        <ul class="rightTabs" id="tabs-contents">
-            <li>
-                <?php         
-                    $args = array( 'post_type' => 'diamonds', 'posts_per_page' => 1, 'order' => 'ASC' );
-                    $loop = new WP_Query( $args );
-                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <p><?php the_content(); ?></p>
-
-                <?php endwhile; ?>
-            </li>
-            <li>
-                <?php         
-                    $args = array( 'post_type' => 'diamonds', 'posts_per_page' => 1, 'offset' => 1, 'order' => 'ASC' );
-                    $loop = new WP_Query( $args );
-                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <p><?php the_content(); ?></p>
-
-                <?php endwhile; ?>
-            </li>
-            <li>
-                <?php         
-                    $args = array( 'post_type' => 'diamonds', 'posts_per_page' => 1, 'offset' => 2, 'order' => 'ASC' );
-                    $loop = new WP_Query( $args );
-                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <p><?php the_content(); ?></p>
-
-                <?php endwhile; ?>
-            </li>
-            <li>
-                <?php         
-                    $args = array( 'post_type' => 'diamonds', 'posts_per_page' =>  1, 'offset' => 3, 'order' => 'ASC' );
-                    $loop = new WP_Query( $args );
-                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <p><?php the_content(); ?></p>
-
-                <?php endwhile; ?>
-            </li>
-            <li>
-                <?php         
-                    $args = array( 'post_type' => 'diamonds', 'posts_per_page' => 1, 'offset' => 4, 'order' => 'ASC' );
-                    $loop = new WP_Query( $args );
-                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <p><?php the_content(); ?></p>
-
-                <?php endwhile; ?>
-            </li>
-        </ul>
-
-         <?php wp_reset_query(); ?>                 
+                       <div class="none active" id="imagingDiv">
+                           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/0.5-0.69-ct-rounds.jpg" alt="0.5-0.60 ct rounds" class="chartImage" >
+                       </div>
+                       <div class="none" id="inventoryDiv">
+                           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/0.7-.89-ct-rounds.jpg" alt="0.7-.89-ct-rounds" class="chartImage" >
+                       </div>
+                       <div class="none" id="chargebackDiv">
+                           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/0.9-0.99-rounds.jpg" alt="0.9-0.99-rounds" class="chartImage" >
+                       </div>
+                       <div class="none" id="studentJobAccountDiv">
+                           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1.00-1.49-ct-rounds.jpg" alt="1.00-1.49-ct-rounds" class="chartImage" >
+                       </div> 
+                       <div class="none" id="studentAccountDiv">
+                           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1.5-1.99-ct-rounds.jpg" alt="1.5-1.99-ct-rounds" class="chartImage" >
+                       </div>
+                       <div class="none" id="studentcountDiv">
+                           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2-2.99-ct-rounds.jpg" alt="2-2.99-ct-rounds" class="chartImage" >
+                       </div>
+       
 
 
-        </div><!-- mainSectionContainer -->
+                    </div><!-- mainSectionContainer -->
 
-    </section>
+                </section>
 		<!-- /section -->
     </main>
 

@@ -61,7 +61,16 @@ tabs.bind('click',function(){
   $(contents[$(this).index()]).show(); //show tab content that matches tab title index
   $(this).addClass('current'); //add current class on clicked tab title
 });
-		
+// select img
+$.fn.showField = function() {
+        var selectVal = document.getElementById(this.val() + 'Div');
+        return this.each(function() {
+            $(selectVal).show().siblings('div').hide();
+        });
+    };    
+    $('select#reportsSelect').change(function() {
+        $(this).showField();
+    });
 	});
 	
 })(jQuery, this);

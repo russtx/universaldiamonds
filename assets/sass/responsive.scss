@@ -39,6 +39,15 @@ and open the template in the editor.
             } 
         }       
     }
+    .page-template-current-pricing-page{
+        .mainSection{
+            .mainSectionContainer{
+                .pricingChart{
+                    
+                }
+            }
+        }
+    }
 }
 
 
@@ -399,6 +408,22 @@ and open the template in the editor.
             }
         }
     }
+    .page-template-current-pricing-page{
+        .mainSection{
+            .mainSectionContainer{
+                .pricingChart{
+                    
+                    .chartHeader{
+                       
+                        h2{
+                             
+                            margin-left: 136px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -462,6 +487,25 @@ and open the template in the editor.
         display: block !important;
         width: 18em !important;
     }
+    .chartContainer{
+        @include outer-container;
+    }
+    .page-template-current-pricing-page{
+        .mainSection{
+            .mainSectionContainer{
+                .pricingChart{
+                    
+                    .chartHeader{
+                       
+                        h2{
+                             
+                            margin-left: 185px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -476,6 +520,14 @@ and open the template in the editor.
     .mainSection{
         span.pageTitle{
             margin-top: -6.5em;
+        }
+        .lowerSection{
+            height:30em;
+            .lowerSectionContainer{
+                .leftSide2{
+                    height:30em;
+                }
+            }
         }
     }
     
@@ -741,7 +793,16 @@ and open the template in the editor.
             margin:4em 3em;
         }
     }
-    
+    .page-template-current-pricing-page{
+        .mainSection{
+            .mainSectionContainer{
+                .pricingChart{
+                    width:70%;
+                    margin:2em auto;
+                }
+            }
+        }
+    }
 }
 
 
@@ -904,6 +965,46 @@ and open the template in the editor.
                 font-size: 3.5em;
             }
         }
+        .lowerSection{
+            height:43em;
+            .lowerSectionContainer{
+                .leftSide2{
+                    height:43em;
+                    img{
+                        width:460px;
+                        float: right;
+                    }
+                     h2{
+                        font-size: 2.5em;
+                    }
+                    p{
+                        font-size: 1.5em;
+                        margin-bottom: 1em;
+                    }
+                    button{
+                        margin-right: 28%;
+                        margin-top:23em;
+                    }
+                }
+                .rightSide2{
+                    img{
+                        width:460px;
+                        float:left;
+                    }
+                    h2{
+                        font-size: 2.5em;
+                    }
+                    p{
+                        font-size: 1.5em;
+                        margin-bottom: 1em;
+                    }
+                    button{
+                        margin-left: 28%;
+                        margin-top:23em;
+                    }
+                }
+            }
+        }
         .mainSectionContainer{
             span.contentHeader{
                 h2{
@@ -938,41 +1039,7 @@ and open the template in the editor.
                     padding: 0 6em 0 0em;
                 }
             }
-            .lowerSection{
-
-                height:43em;
-                .leftSide2{
-                    height:43em;
-                    img{
-                        width:460px;
-                    }
-                     h2{
-                        font-size: 2.5em;
-                    }
-                    p{
-                        font-size: 1.5em;
-                        margin-bottom: 1em;
-                    }
-                    button{
-                        margin-right: 28%;
-                    }
-                }
-                .rightSide2{
-                    img{
-                        width:460px;
-                    }
-                    h2{
-                        font-size: 2.5em;
-                    }
-                    p{
-                        font-size: 1.5em;
-                        margin-bottom: 1em;
-                    }
-                    button{
-                        margin-left: 28%;
-                    }
-                }
-            }
+            
         }
     }//mainContent
     .page-template-why-page{

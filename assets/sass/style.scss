@@ -816,7 +816,60 @@ nav input[type="checkbox"]{
         }
     }
 }
-
+.page-template-current-pricing-page{
+    
+    .mainSection{
+        .mainSectionContainer{
+            .mainContent{
+                h2{
+                  color:$dark-blue;  
+                }
+                h3{
+                    color:$light-blue;
+                    font-size:.8em;
+                }
+            }
+            .lowerText{
+                h3{
+                    text-align:center;
+                }
+                p{
+                    text-align:center;
+                }
+            }
+            .pricingChart{
+                
+                display: block;
+                border:solid 4px $light-blue;
+                margin-bottom:2em;
+                width: 100%;
+                
+                height:100%;
+                overflow:hidden;
+                span.chartHeader{
+                    display: block;
+                    background:$light-blue;
+                    height:3em;
+                    padding-top:.5em;
+                    h2{
+                        color: #fff;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        float:left;
+                        padding: 0 7px 0 25px;
+                    }
+                    select{
+                        width:12em;
+                        border-radius:8px;
+                    }
+                }
+                img.chartImage{
+                    margin-top:-1em;
+                }
+            }
+        }
+    }
+}
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
@@ -941,8 +994,13 @@ ul.triggers {
 /*------------------------------------*\
 	TEST AREA
 \*------------------------------------*/
-
-
+.none{
+    margin: 1em 0; 
+    display: none
+}
+.active{
+    display: block;
+}
 
 /*------------------------------------*\
 	TYPOGRAPHY
