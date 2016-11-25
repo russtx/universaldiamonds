@@ -504,6 +504,78 @@ function create_post_type_html5()
         ) // Add Category and Post Tags support
     ));
     
+    register_taxonomy_for_object_type('category', 'price'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'price');
+    register_post_type('price', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Price Sheet', 'price'), // Rename these to suit
+            'singular_name' => __('Price Sheet', 'price'),
+            'add_new' => __('Add New', 'price'),
+            'add_new_item' => __('Add New Price Sheet', 'price'),
+            'edit' => __('Edit', 'price'),
+            'edit_item' => __('Edit Price Sheet', 'price'),
+            'new_item' => __('New Price Sheet', 'price'),
+            'view' => __('View Price Sheet', 'price'),
+            'view_item' => __('View Price Sheet', 'price'),
+            'search_items' => __('Search Price Sheet', 'price'),
+            'not_found' => __('No Price Sheets found', 'price'),
+            'not_found_in_trash' => __('No Price Sheets found in Trash', 'price')
+        ),
+        'menu_icon' => 'dashicons-media-spreadsheet',   
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'thumbnail'
+            
+            
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+    
+    register_taxonomy_for_object_type('category', 'slider'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'slider');
+    register_post_type('slider', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Slider', 'slider'), // Rename these to suit
+            'singular_name' => __('Slider', 'slider'),
+            'add_new' => __('Add New', 'slider'),
+            'add_new_item' => __('Add New Slider', 'slider'),
+            'edit' => __('Edit', 'slider'),
+            'edit_item' => __('Edit Slider', 'slider'),
+            'new_item' => __('New Slider', 'slider'),
+            'view' => __('View Slider', 'slider'),
+            'view_item' => __('View Slider', 'slider'),
+            'search_items' => __('Search Slider', 'slider'),
+            'not_found' => __('No Sliders found', 'slider'),
+            'not_found_in_trash' => __('No Sliders found in Trash', 'slider')
+        ),
+        'menu_icon' => 'dashicons-format-gallery',   
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'thumbnail'
+            
+            
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+            
+        ) // Add Category and Post Tags support
+    ));
+    
 }
 
 /*------------------------------------*\

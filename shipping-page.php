@@ -117,23 +117,23 @@ get_header(); ?>
                 </div><!-- formArea -->
                 
                 <div class="lowerSection">
-                    <div class="lowerSectionContainer">
+                        <div class="lowerSectionContainer">
                         
-                        <div class="leftSide2">
-                            <h2>Intro To Diamonds</h2>
-                            <p>Take a Crash Course in the 4 C<span>s</span></p>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamond-2.png" alt="diamond-2">
-                            <a href="<?php echo home_url(); ?>/intro-to-diamonds"><button>Learn More</button></a>
-                        </div><!-- leftSide2 -->
+                            <div class="leftSide2">
+                                <h2>Intro To Diamonds</h2>
+                                <p>Take a Crash Course in the 4 C<span>s</span></p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamond-2.png" alt="diamond-2">
+                                <a href="<?php echo home_url(); ?>/intro-to-diamonds"><button>Learn More</button></a>
+                            </div><!-- leftSide2 -->
 
-                        <div class="rightSide2">
-                            <h2>Diamond Pricing</h2>
-                            <p>Take a Look At Our Pricing Chart</p>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamonds-3.png" alt="diamond-3">
-                            <a href="<?php echo home_url(); ?>/pricing"><button>Learn More</button></a>
-                        </div><!-- rightSide -->
-                    </div><!-- lowerSectionContainer -->
-                </div><!-- lowerSection -->
+                            <div class="rightSide2">
+                                <h2>Diamond Pricing</h2>
+                                <p>Take a Look At Our Pricing Chart</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diamonds-3.png" alt="diamond-3">
+                                <a href="<?php echo home_url(); ?>/pricing"><button>Learn More</button></a>
+                            </div><!-- rightSide -->
+                        </div><!-- lowerSectionContainer -->
+                    </div><!-- lowerSection -->
 
 
 		</section>

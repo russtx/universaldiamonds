@@ -69,22 +69,64 @@ get_header(); ?>
                                         </span>    
 
                                             <div class="none active" id="imagingDiv">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/0.5-0.69-ct-rounds.jpg" alt="0.5-0.60 ct rounds" class="chartImage" >
+                                                 <?php         
+                                                    $args = array( 'post_type' => 'price', 'posts_per_page' => 1, 'order' => 'ASC' );
+                                                    $loop = new WP_Query( $args );
+                                                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                                                        
+                                                    <?php the_post_thumbnail(); ?>
+                                                                           
+                                                    <?php endwhile; ?>  
                                             </div>
                                             <div class="none" id="inventoryDiv">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/0.7-.89-ct-rounds.jpg" alt="0.7-.89-ct-rounds" class="chartImage" >
+                                                <?php         
+                                                    $args = array( 'post_type' => 'price', 'posts_per_page' => 1, 'offset' => 1, 'order' => 'ASC' );
+                                                    $loop = new WP_Query( $args );
+                                                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                                                    <?php the_post_thumbnail(); ?>
+
+                                                    <?php endwhile; ?> 
                                             </div>
                                             <div class="none" id="chargebackDiv">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/0.9-0.99-rounds.jpg" alt="0.9-0.99-rounds" class="chartImage" >
+                                                <?php         
+                                                    $args = array( 'post_type' => 'price', 'posts_per_page' => 1, 'offset' => 2, 'order' => 'ASC' );
+                                                    $loop = new WP_Query( $args );
+                                                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                                                    <?php the_post_thumbnail(); ?>
+
+                                                    <?php endwhile; ?> 
                                             </div>
                                             <div class="none" id="studentJobAccountDiv">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1.00-1.49-ct-rounds.jpg" alt="1.00-1.49-ct-rounds" class="chartImage" >
+                                                <?php         
+                                                    $args = array( 'post_type' => 'price', 'posts_per_page' => 1, 'offset' => 3, 'order' => 'ASC' );
+                                                    $loop = new WP_Query( $args );
+                                                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                                                    <?php the_post_thumbnail(); ?>
+
+                                                    <?php endwhile; ?> 
                                             </div> 
                                             <div class="none" id="studentAccountDiv">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1.5-1.99-ct-rounds.jpg" alt="1.5-1.99-ct-rounds" class="chartImage" >
+                                                <?php         
+                                                    $args = array( 'post_type' => 'price', 'posts_per_page' => 1, 'offset' => 4, 'order' => 'ASC' );
+                                                    $loop = new WP_Query( $args );
+                                                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                                                    <?php the_post_thumbnail(); ?>
+
+                                                    <?php endwhile; ?> 
                                             </div>
                                             <div class="none" id="studentcountDiv">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2-2.99-ct-rounds.jpg" alt="2-2.99-ct-rounds" class="chartImage" >
+                                                <?php         
+                                                    $args = array( 'post_type' => 'price', 'posts_per_page' => 1, 'offset' => 5, 'order' => 'ASC' );
+                                                    $loop = new WP_Query( $args );
+                                                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                                                    <?php the_post_thumbnail(); ?>
+
+                                                    <?php endwhile; ?> 
                                             </div>
 
                                     </div><!--pricingChart-->

@@ -90,43 +90,89 @@ get_header(); ?>
                             <div class="mask">
                                 <ul class="images">
                                    <li>
-                                       <span>
-                                           <h2>What We Buy</h2>
-                                           <p>Watches, Diamonds, Jewelry, etc.</p>
-                                       </span>  
-                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
+                                        
+                                     <?php         
+                                        $args = array( 'post_type' => 'slider', 'posts_per_page' => 1,  'order' => 'ASC' );
+                                        $loop = new WP_Query( $args );
+                                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                                        <span>
+                                            <h2><?php the_title(); ?></h2>
+                                            <p><?php the_content(); ?></p>
+                                        </span> 
+
+
+                                        <?php the_post_thumbnail(); ?>
+
+                                        <?php endwhile; ?> 
 
                                    </li>
                                    <li>
-                                       <span>
-                                           <h2>PIX 2</h2>
-                                           <p>Some More Text</p>
-                                       </span> 
-                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
+                                       <?php         
+                                        $args = array( 'post_type' => 'slider', 'posts_per_page' => 1, 'offset' => 1,  'order' => 'ASC' );
+                                        $loop = new WP_Query( $args );
+                                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                                        <span>
+                                            <h2><?php the_title(); ?></h2>
+                                            <p><?php the_content(); ?></p>
+                                        </span> 
+
+
+                                        <?php the_post_thumbnail(); ?>
+
+                                        <?php endwhile; ?> 
 
                                    </li>
                                     <li>
+                                        <?php         
+                                        $args = array( 'post_type' => 'slider', 'posts_per_page' => 1, 'offset' => 2,  'order' => 'ASC' );
+                                        $loop = new WP_Query( $args );
+                                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
                                         <span>
-                                           <h2>PIX 3</h2>
-                                           <p>Some More Text</p>
-                                       </span>
-                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
+                                            <h2><?php the_title(); ?></h2>
+                                            <p><?php the_content(); ?></p>
+                                        </span> 
+
+
+                                        <?php the_post_thumbnail(); ?>
+
+                                        <?php endwhile; ?> 
 
                                    </li>
                                    <li>
-                                       <span>
-                                           <h2>PIX 4</h2>
-                                           <p>Some More Text</p>
-                                       </span>
-                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
+                                       <?php         
+                                        $args = array( 'post_type' => 'slider', 'posts_per_page' => 1, 'offset' => 3,  'order' => 'ASC' );
+                                        $loop = new WP_Query( $args );
+                                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                                        <span>
+                                            <h2><?php the_title(); ?></h2>
+                                            <p><?php the_content(); ?></p>
+                                        </span> 
+
+
+                                        <?php the_post_thumbnail(); ?>
+
+                                        <?php endwhile; ?> 
 
                                    </li>
                                    <li>
-                                       <span>
-                                           <h2>PIX 5</h2>
-                                           <p>Some More Text</p>
-                                       </span>
-                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.png" alt="icon-2" class="icon-img">
+                                       <?php         
+                                        $args = array( 'post_type' => 'slider', 'posts_per_page' => 1, 'offset' => 4,  'order' => 'ASC' );
+                                        $loop = new WP_Query( $args );
+                                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                                        <span>
+                                            <h2><?php the_title(); ?></h2>
+                                            <p><?php the_content(); ?></p>
+                                        </span> 
+
+
+                                        <?php the_post_thumbnail(); ?>
+
+                                        <?php endwhile; ?> 
 
                                    </li>
                                 </ul>
